@@ -101,16 +101,7 @@
   };
   
   const handleSubmit = () => {
-    if (!/^\d{10}$/.test(accountNumber.value)) {
-      error.value = 'Account number must be 10 digits.';
-      toast.add({
-        severity: 'error',
-        summary: 'Validation Error',
-        detail: 'Account number must be 10 digits.',
-        life: 3000,
-      });
-      return;
-    }
+
   
     if (!document.value || !bankCode.value || !branch.value) {
       error.value = 'Please enter a valid account number to auto-fill details.';
@@ -135,7 +126,7 @@
     error.value = '';
   
     // Redirect to the Dashboard page
-    router.push({ name: 'Dashboard' });
+    router.push({ name: 'Confirmation' });
   };
   </script>
   

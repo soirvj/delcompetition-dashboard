@@ -117,6 +117,7 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #f8f9fa;
+    margin-right: -34px;
   }
   
   header {
